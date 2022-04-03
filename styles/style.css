@@ -1,0 +1,178 @@
+/* LAYOUT */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-family: "DM Sans", sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.wrapper {
+  max-width: 1340px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+/* HEADER */
+.header {
+  padding: 40px 0 25px 0;
+}
+.header__logo {
+  display: block;
+  width: 52px;
+  height: auto;
+  margin: 0 auto;
+}
+.header__title {
+  text-align: center;
+  margin: 0 auto 17px auto;
+  font-size: 36px;
+  line-height: 46px;
+  color: #d04f4f;
+  font-weight: 700;
+}
+
+/* SEARCH */
+.search__label {
+  position: relative;
+}
+.search__label span,
+.search__tag-label span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.search__input {
+  padding: 24px 72px 24px 24px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  border: none;
+}
+.search__input::placeholder {
+  color: #000000;
+  opacity: 0.25;
+}
+.search__icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.search__tags {
+  display: flex;
+  margin: 25px 0;
+}
+.search__tag-label {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.search__tag-input {
+  width: 170px;
+  padding: 24px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+.search__tag-input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.search__tag-input[name="ingredients-tag"] {
+  background-color: #3282f7;
+}
+.search__tag-input[name="equipment-tag"] {
+  background-color: #68d9a4;
+}
+.search__tag-input[name="ustensils-tag"] {
+  background-color: #ed6454;
+}
+.search__tag-icon {
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+/* RECIPES */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -50px;
+}
+.recipe {
+  width: 33.33333%;
+  height: 100%;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+.recipe__card {
+  background-color: #e7e7e7;
+  border-radius: 5px;
+}
+.recipe__image {
+  height: 178px;
+  background-color: #c7bebe;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.recipe__content {
+  padding: 20px;
+}
+.recipe__content-header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.recipe__content-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.recipe__content-header-timing {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.recipe__content-header-timing img {
+  width: 20px;
+  height: auto;
+  margin-right: 7px;
+}
+.recipe__content-body {
+  display: flex;
+  font-size: 12px;
+}
+.recipe__content-body ul,
+.recipe__content-body p {
+  width: 50%;
+}
+.recipe__content-body-ingredients li {
+  padding-right: 10px;
+}
+.recipe__content-body-ingredients li span:first-child {
+  font-weight: 700;
+}
