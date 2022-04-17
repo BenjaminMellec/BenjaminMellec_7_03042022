@@ -1,4 +1,4 @@
-import { recipes } from "/javascript/data/recipes.js";
+import recipes from "../javascript/data/recipes.js";
 
 class Index {
   constructor() {
